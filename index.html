@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="so">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samsung Style Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calculator-container">
+        <div class="screen">
+            <input type="text" id="display" readonly placeholder="0">
+        </div>
+
+        <hr class="divider">
+
+        <div class="buttons-grid">
+            <button onclick="clearDisplay()" class="btn btn-clear">C</button>
+            <button onclick="appendValue('()')" class="btn btn-op-light">()</button>
+            <button onclick="appendValue('%')" class="btn btn-op-light">%</button>
+            <button onclick="appendValue('/')" class="btn btn-op-light">÷</button>
+
+            <button onclick="appendValue('7')" class="btn btn-num">7</button>
+            <button onclick="appendValue('8')" class="btn btn-num">8</button>
+            <button onclick="appendValue('9')" class="btn btn-num">9</button>
+            <button onclick="appendValue('*')" class="btn btn-op-light">×</button>
+
+            <button onclick="appendValue('4')" class="btn btn-num">4</button>
+            <button onclick="appendValue('5')" class="btn btn-num">5</button>
+            <button onclick="appendValue('6')" class="btn btn-num">6</button>
+            <button onclick="appendValue('-')" class="btn btn-op-light">−</button>
+
+            <button onclick="appendValue('1')" class="btn btn-num">1</button>
+            <button onclick="appendValue('2')" class="btn btn-num">2</button>
+            <button onclick="appendValue('3')" class="btn btn-num">3</button>
+            <button onclick="appendValue('+')" class="btn btn-op-light">+</button>
+
+            <button onclick="toggleSign()" class="btn btn-num">+/−</button>
+            <button onclick="appendValue('0')" class="btn btn-num">0</button>
+            <button onclick="appendValue('.')" class="btn btn-num">.</button>
+            <button onclick="calculate()" class="btn btn-equal">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator-container {
+    background-color: #f4f4f4;
+    width: 360px;
+    height: 640px;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.screen {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#display {
+    width: 100%;
+    border: none;
+    background: transparent;
+    font-size: 48px;
+    text-align: right;
+    color: #333;
+    outline: none;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    border: none;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%; /* Ka dhigaya badhamada kuwo wareegsan */
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.2s;
+}
+
+/* Midabka Nambarada (Caddaan iyo qoraal madow) */
+.btn-num {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Midabka C-da (Gaduud khafiif ah) */
+.btn-clear {
+    background-color: #ececec;
+    color: #ca3a31;
+}
+
+/* Badhamada calaamadaha (Cagaar khafiif ah) */
+.btn-op-light {
+    background-color: #ececec;
+    color: #2a7e1d;
+    font-weight: 500;
+}
+
+/* Badhanka Isku-beegma (Cagaar weyn) */
+.btn-equal {
+    background-color: #4da600;
+    color: white;
+}
+
+/* Marka farta la saaro badhamada (Hover effect) */
+.btn:active {
+    opacity: 0.7;
+}
